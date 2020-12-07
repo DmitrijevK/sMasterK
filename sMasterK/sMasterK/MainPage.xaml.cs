@@ -49,7 +49,10 @@ namespace sMasterK
 
         private void heroes_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            var selecte = (klas)e.SelectedItem;
+            Type selectedpage = selecte.TarPage;
+            Detail = new NavigationPage((Page)Activator.CreateInstance(selectedpage));
+            IsPresented = false;
         }
     }
     }
