@@ -26,7 +26,7 @@ namespace sMasterK
             herolist.Add(new klas()
             {
                 Text = "Герои",
-                ImageP = "Список героев",
+                ImageP = "mm.png",
                 TarPage = typeof(funkt.heroess)
             });
 
