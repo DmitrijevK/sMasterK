@@ -4,10 +4,18 @@
               BackgroundImageSource="pusja.png"
              x:Class="sMasterK.funkt.heroess">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+            <StackLayout Margin="10" Orientation="Vertical">
+                <Image x:Name="ProfileImage"></Image>
+                <ListView x:Name="aboutlis" ItemSelected="aboutlis_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell TextColor="Black" Text="{Binding Text}" Detail="{Binding Detail}"
+                                       ImageSource="{Binding ImagePath}">
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Label Text="DetailPage" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
