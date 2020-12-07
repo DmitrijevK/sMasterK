@@ -7,16 +7,17 @@
         <ContentPage Title="Menu" BackgroundColor="#ede1c2" Padding="10">
             <ContentPage.Content>
                 <StackLayout Margin="10" Orientation="Vertical">
+                    <Image Source="masika.png"/>
                     <ListView x:Name="heroes" ItemSelected="heroes_ItemSelected">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <ImageCell Text="{Binding Text}" Detail="{Binding Detail}"
+                                <ImageCell TextColor="Black" Text="{Binding Text}" Detail="{Binding Detail}"
                                        ImageSource="{Binding ImagePath}">
                                 </ImageCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Label Text="Page1" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                    <Label Text="Меню" VerticalOptions="Center" HorizontalOptions="Center"></Label>
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>

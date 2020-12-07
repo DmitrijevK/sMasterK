@@ -4,9 +4,7 @@
              x:Class="sMasterK.funkt.opisanie">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <WebView Source="https://playhearthstone.com/ru-ru/news/23156373"
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
