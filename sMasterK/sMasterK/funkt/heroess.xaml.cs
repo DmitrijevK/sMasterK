@@ -15,16 +15,28 @@ namespace sMasterK.funkt
     {
         public heroess()
         {
+
+            SearchBar searchBar = new SearchBar
+            {
+                Placeholder = "Название персонажа",
+                PlaceholderColor = Color.Black,
+                TextColor = Color.Black,
+                HorizontalTextAlignment = TextAlignment.Center,
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(SearchBar)),
+                FontAttributes = FontAttributes.Italic
+            };
+
+
             Title = "Персонажи";
             StackLayout vtornikv = new StackLayout();
-            string[] taska = new string[] { "Afka", "Söön ", "Tegelen spordiga", "Söön", "Läks koolis", "Söön" };
-
+            string[] taska = new string[] { "А. Ф. Ка", "Ал'акир ", "Алекстраза", "Аранна Звездочет", "Ахалаймахалай", "Вечная Токи" };
             ListView lista = new ListView();
-            // определяем источник данных
+
             lista.ItemsSource = taska;
 
             lista.ItemSelected += Lista_ItemSelected;
-            Content = new StackLayout { Children = { lista} };
+            Content = new StackLayout { Children = { searchBar, lista } };
+           
         }
 
         private async void Lista_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -33,6 +45,28 @@ namespace sMasterK.funkt
             if (e.SelectedItemIndex == 0)
             {
                 await Navigation.PushAsync(new afka());
+            }
+
+            if (e.SelectedItemIndex == 1)
+            {
+                await Navigation.PushAsync(new alakir());
+            }
+
+            if (e.SelectedItemIndex == 2)
+            {
+                await Navigation.PushAsync(new alekstraza());
+            }
+            if (e.SelectedItemIndex == 3)
+            {
+                await Navigation.PushAsync(new arana());
+            }
+            if (e.SelectedItemIndex == 4)
+            {
+                await Navigation.PushAsync(new mahalai());
+            }
+            if (e.SelectedItemIndex == 5)
+            {
+                await Navigation.PushAsync(new toki());
             }
 
         }
