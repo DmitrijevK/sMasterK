@@ -4,7 +4,7 @@
              x:Class="sMasterK.funkt.opisanie">
     <ContentPage.Content>
         <StackLayout>
-            <WebView Source="https://playhearthstone.com/ru-ru/news/23156373"
+            <WebView Source="https://playhearthstone.com/ru-ru/news/23156373"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
