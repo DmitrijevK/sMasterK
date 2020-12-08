@@ -26,21 +26,21 @@ namespace sMasterK.funkt
             herolisti.Add(new classs()
             {
                 Ltext = "Afka",
-                Limage = "pilt.png",
+                Limage = "afka.png",
                 TarPage = typeof(pesi.afka)
             });
 
             herolisti.Add(new classs()
             {
-                Ltext = "Поля сражений",
-                Limage = "icon.png",
+                Ltext = "Ala`kir",
+                Limage = "alakir.png",
                 TarPage = typeof(pesi.alakir)
             });
 
             herolisti.Add(new classs()
             {
-                Ltext = "Карты",
-                Limage = "msika.png",
+                Ltext = "Arana StarReader",
+                Limage = "arana.png",
                 TarPage = typeof(pesi.alekstraza)
             });
             return herolisti;
