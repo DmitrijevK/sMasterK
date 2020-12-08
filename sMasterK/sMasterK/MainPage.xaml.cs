@@ -26,21 +26,21 @@ namespace sMasterK
             herolist.Add(new klas()
             {
                 Text = "Герои",
-                ImageP = "mm.png",
+                ImageP = "pilt.png",
                 TarPage = typeof(funkt.heroess)
             });
 
             herolist.Add(new klas()
             {
                 Text = "Поля сражений",
-                ImageP = "Что это такое?",
+                ImageP = "icon.png",
                 TarPage = typeof(funkt.opisanie)
             });
 
             herolist.Add(new klas()
             {
                 Text = "Карты",
-                ImageP = "Виды Карт",
+                ImageP = "msika.png",
                 TarPage = typeof(funkt.opisanie)
             });
             return herolist; 

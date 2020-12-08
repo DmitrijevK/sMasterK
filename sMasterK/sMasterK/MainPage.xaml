@@ -18,7 +18,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Label Text="Меню" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+                    <Label Text="HearthStone" VerticalOptions="Center" HorizontalOptions="Center"></Label>
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>
