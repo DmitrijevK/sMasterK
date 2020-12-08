@@ -4,17 +4,14 @@
               BackgroundImageSource="pusja.png"
              x:Class="sMasterK.funkt.heroess">
     <ContentPage.Content>
-            <StackLayout Margin="10" Orientation="Vertical">
-                <Image x:Name="ProfileImage"></Image>
-            <ListView x:Name="aboutlis" ItemSelected="aboutlis_ItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ImageCell TextColor="Black" Text="{Binding Text}" Detail="{Binding Detail}"
-                                       ImageSource="{Binding ImagePath}">
-                        </ImageCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
-        </ContentPage.Content>
-    </ContentPage>
+        <ListView x:Name="listik" ItemSelected="listik_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell TextColor="Black" Text="{Binding Ltext}"
+                                       ImageSource="{Binding Limage}">
+                    </ImageCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
